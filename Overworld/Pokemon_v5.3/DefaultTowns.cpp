@@ -140,7 +140,7 @@ void DefaultTowns::PokemonMart(){                                               
         cout << "Talk to customer at the door (press 1)" << endl;
         cout << "Talk to customer in the back (press 2)" << endl;
         cout << "Talk to POKEMON TRAINER (press 3)" << endl;
-        cout << " POKEMON MART (press 4)" << endl;
+        cout << "Leave POKEMON MART (press 4)" << endl;
         cin >> choice;
         switch(choice){
             case '1':{
