@@ -1,3 +1,14 @@
+//Programmer:		Joshua Buckles, Zachary Romero
+//Assignment:		Pokemon Group Project
+
+//Description:		The purpose of this program is to create a Intro Class
+
+
+//PreProcessor Directive
+//This line of code causes the contents of another file to be
+//inserted into the program
+
+
 #ifndef INTRO_H
 #define INTRO_H
 
@@ -8,9 +19,6 @@
 using namespace std;
 
 class Intro {
-    friend class DefaultTowns;
-    friend class Route1;
-    friend void Testile();
   public:
     string PName;
     string RName;

@@ -1,6 +1,6 @@
 #include "DefaultTowns.h"
 
-void DefaultTowns::ViridianCity()
+void DefaultTowns::ViridianCity()                                               //Default ViridianCity Function 
 {
     cout << "You step into Viridian City, the Eternally Green Paradise." << endl;
     cin.ignore();
@@ -9,7 +9,7 @@ void DefaultTowns::ViridianCity()
     cout << "What would you like to do?" << endl;
     cin.ignore();
     do{
-        end = false;
+        end = false;                                                            //set up bool to run Do while loop for Viridian City Menu
         cout << "Talk to random Pokemon trainer (press 1)" << endl;
         cout << "Talk to old man in the road (press 2)" << endl;
         cout << "Enter the POKeMON Center (press 3)" << endl;
@@ -76,7 +76,18 @@ void DefaultTowns::ViridianCity()
     }while(end == false);
 };
 
-void DefaultTowns::PokemonCenter(){
+//Programmer:		Joshua Buckles, Zachary Romero
+//Assignment:		Pokemon Group Project
+
+//Description:		The purpose of this program is to hold DefaultTowns member functions
+
+
+//PreProcessor Directive
+//This line of code causes the contents of another file to be
+//inserted into the program
+
+
+void DefaultTowns::PokemonCenter(){                                                 //Pokemon Center function
   cout << "You enter the POKEMON Center." << endl;
     cin.ignore();
     cout << "What would you like to do?" << endl;
@@ -119,13 +130,13 @@ void DefaultTowns::PokemonCenter(){
 
 }
 
-void DefaultTowns::PokemonMart(){
+void DefaultTowns::PokemonMart(){                                               //Pokemart function
   cout << "You enter the POKEMON MART." << endl;
     cin.ignore();
     cout << "What would you like to do?" << endl;
     cin.ignore();
     do{
-        end = false;
+        end = false;                                                            //bool variable set as a parameter for Do while loop to run menu
         cout << "Talk to customer at the door (press 1)" << endl;
         cout << "Talk to customer in the back (press 2)" << endl;
         cout << "Talk to POKEMON TRAINER (press 3)" << endl;
@@ -162,21 +173,21 @@ void DefaultTowns::PokemonMart(){
                 cout << "All I want to do is defeat Viridian City's POKEMON GYM LEADER Brock." << endl;
                 break;
             }
-            case '4':{
-                ViridianCity();
-                end = true;
+            case '4':{              
+                ViridianCity();                                                 //Ends do while loop by switching bool variable, runs Viridian City Function            
+                end = true;                                                     
                 break;
             }
         }
-    }while(end == false);
+    }while(end == false);                                                       //Check bool variable to run loop, iv bool is true, loop breaks and player enters another function
 }
 
-void DefaultTowns::PokemonGym(){
-  cout << "You enter the Viridian City Gym." << endl;
+void DefaultTowns::PokemonGym(){                                                //Pokemon Gym Function
+  cout << "You enter the Viridian City Gym." << endl;   
     cin.ignore();
     cout << "What would you like to do?" << endl;
     cin.ignore();
-    do{
+    do{                                                                         //set up Do while loop to run menu
         cout << "Read the signpost (press 1)" << endl;
         cout << "Read the plaque (press 2)" << endl;
         cout << "Talk to the gym leader (press 3)" << endl;
@@ -210,23 +221,28 @@ void DefaultTowns::PokemonGym(){
                 break;
             }
         }
-    }while(end == false);
+    }while(end == false);                                                       //Check loop breaks and player enters another function
 }
 
-void DefaultTowns::BrockGym(){
-  srand(time(0));
-    int roll = rand() % 100;
-    if(roll < 75){
+void DefaultTowns::BrockGym(){                                                  //Gym leader battle simulation 
+  srand(time(0));                                                               //function to seed rand with system time
+    int roll = rand() % 100;                                                    //Create int randEncounter variable
+    if(roll < 25){
         cout << "You're pretty hot, but not as hot as BROCK! \n\n\nCome back when you are stronger!" << endl;
         ViridianCity();
     }
-    else{
+    else{                                                                       //Wins battle against Gym leader and ends game.
         cout << "I took you for granted." << endl;
         cin.ignore();
         cout << "As proof of your victory, here's the BOULDERBADGE!" << endl;
         cin.ignore();
         cout << "That's an official POKEMON LEAGUE BADGE!" << endl;
         cin.ignore();
-        cout << "That's all for now! Thanks for playing!" << endl;
+        EndGame();                                                              //Ends the game
     }
+}
+
+void DefaultTowns::EndGame(){                                                   //Ends the game
+     cout << "That's all for now! Thanks for playing!" << endl;
+        cin.ignore(); 
 }

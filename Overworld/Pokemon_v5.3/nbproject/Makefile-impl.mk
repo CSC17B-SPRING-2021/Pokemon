@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Pokemon_v5.2
+PROJECTNAME=Pokemon_v5.3
 
 # Active Configuration
 DEFAULTCONF=Debug

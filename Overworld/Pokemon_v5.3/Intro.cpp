@@ -1,4 +1,20 @@
+//Programmer:		Joshua Buckles, Zachary Romero
+//Assignment:		Pokemon Group Project
+
+//Description:		The purpose of this program is to Intro class member function definitions
+
+
+//PreProcessor Directive
+//This line of code causes the contents of another file to be
+//inserted into the program#include "Intro.h"
+
+
+#include <cstdlib>
+#include <iomanip>
+#include <iostream>
 #include "Intro.h"
+
+using namespace std;
 
 void Intro::GameIntro(){
   cout << "\nAn image of a man in a lab coat appears\n"; 

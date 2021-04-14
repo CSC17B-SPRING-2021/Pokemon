@@ -1,11 +1,13 @@
-/*Pokemon/Overworld/Pokemon V5.2/DefaultTowns.h
-@zZ-JayBuck-Zz
-zZ-JayBuck-Zz Fully Objectified Pokemon game V5.2
-Latest commit b126685 2 days ago
-History
-1 contributor
-253 lines (245 sloc) 9.58 KB
-*/
+//Programmer:		Joshua Buckles, Zachary Romero
+//Assignment:		Pokemon Group Project
+
+//Description:		The purpose of this program is to create a Default town class
+
+
+//PreProcessor Directive
+//This line of code causes the contents of another file to be
+//inserted into the program
+
 #ifndef DEFAULTTOWNS_H
 #define DEFAULTTOWNS_H
 
@@ -16,19 +18,16 @@ History
 using namespace std;
 
 class DefaultTowns {
-    friend class Route1;
-    friend class Intro;
-    friend void Testile();
   public:
-    //void PalletTown();
-    void ViridianCity();
-    void PokemonCenter();
-    void PokemonMart();
-    void PokemonGym();
-    void BrockGym();
-    bool end;
-    char choice;
-    int Grass;
+    void ViridianCity();                                                        //Runs Viridian City
+    void PokemonCenter();                                                       //Runs Pokemon Center
+    void PokemonMart();                                                         //Runs Pokemon Mart
+    void PokemonGym();                                                          //Runs Pokemon Gym
+    void BrockGym();                                                            //Runs Brocks battle system
+    void EndGame();                                                             //Ends Game
+    bool end;                                                                   //Holds end variable to end do while menu loops
+    char choice;                                                                //holds choice variable for menu case switches
+    int Grass;                                                                  //hold Grass variable for  do while grass loop and return function
 };
 
 #endif /*DEFAULTTOWNS_H*/

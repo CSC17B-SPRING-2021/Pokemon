@@ -1,11 +1,21 @@
+//Programmer:		Joshua Buckles, Zachary Romero
+//Assignment:		Pokemon Group Project
+
+//Description:		The purpose of this program is to hold member function Definitions for Route1 class
+
+
+//PreProcessor Directive
+//This line of code causes the contents of another file to be
+//inserted into the program
+
 #include "Route1.h"
 
-void Route1::RandomEncounter()
+void Route1::RandomEncounter()                                                  //Random Encounter function that runs a battle simulation as a place holder for battle class
 {
-    int randEncounter;
-    srand(time(0));
+    int randEncounter;                                                          //Create int randEncounter variable
+    srand(time(0));                                                             //function to seed rand with system time
     randEncounter = rand() % 100 + 1;
-    if(randEncounter >= 80){                                        //each tile will have a 20% chance to spawn a random encounter
+    if(randEncounter >= 80){                                                    //each tile will have a 20% chance to spawn a random encounter
         cout << "This is where the random encounter will take place." << endl;
     }
     else{
@@ -16,7 +26,7 @@ void Route1::RandomEncounter()
     }
 }
 
-void Route1::Route1Intro(){
+void Route1::Route1Intro(){                                                     //Function for to introduce players to grass and its functions
   cout << "You have entered the grass area." << endl;
     cin.ignore();
     cout << "This is a dangerous place that Professor Oak warned us about." << endl;
@@ -31,13 +41,13 @@ void Route1::Route1Intro(){
     cin.ignore();
 }
 
-int Route1::Route1Defualt(){
-  char choice;
+int Route1::Route1Defualt(){                                                    //Function to run after intro
+  char choice;                                                                  //Do while to run menu for Grass
   do{
         cout << "You have entered the grass area." << endl;
         cout << "Do you want to move to the next tile or go backward? (press 'f' or 'b')" << endl;
         cin >> choice;
-        switch(choice){
+        switch(choice){                                                         //Player movement menu that stores an int return value
             case 'f':{
                 tile++;
                 cout << "You have moved forward a tile." << endl;
@@ -63,18 +73,12 @@ int Route1::Route1Defualt(){
                 break;
             }
         }
-    }while(tile <= 5 && tile >= 0);
-    /*if(tile > 5){                                                                   //if the tile > 5 then you go into 
-        cout <<"\n\n\n\nViridianCity"<< endl;
-    }
-    else if(tile < 0){
-        //PalletTown();
-        cout << "\n\n\n\nPalletTown" <<endl;
-    }*/
-    return tile;
+    }while(tile <= 5 && tile >= 0);                                             //Runs above menu until parameters is satisfied
+    
+    return tile;                                                                //Returns Tile variable to main 
 }
 
-void Route1::DefaultPalletTown(){
+void Route1::DefaultPalletTown(){                                               //runs Default version of Pallet town that is different from the Intro class
     
     cout << "Steps into Pallet Town." << endl;
     cin.ignore();
@@ -88,7 +92,7 @@ void Route1::DefaultPalletTown(){
         cout << "Leave the town, go past the grass. (press 4)" << endl;
         cout << "Go back inside your house. (press 5)" << endl;
         cin >> choice; 
-        switch (choice){
+        switch (choice){                                                        //Rival's house menu
             case '1':{
                 cout << "When you step inside you see Rival's sister at the dining table and a map on the wall." << endl;
                 cin.ignore();
@@ -98,7 +102,7 @@ void Route1::DefaultPalletTown(){
                     cout << "Talk to Rival sister? (press 1)" << endl;
                     cout << "Leave the house. (press 2)" << endl;
                     cin >> choice;
-                    switch(choice){   //blue's house
+                    switch(choice){                                             //Rival's house
                         case '1':{
                             cout << "Hi! my brother is out at Grandpa's lab." << endl;
                             break;
@@ -122,12 +126,12 @@ void Route1::DefaultPalletTown(){
                 cout << "Technology is incredible! You can now store and recall items and POKeMON as data via PC!" << endl;
                 break;
             }
-            case '3':{            //inside professor oak's lab before going to grass
+            case '3':{                                                          //inside professor Oak's lab before going to grass
                 cout << "The Lab is great, but I should get going." <<endl;
                 break;
             }
             case '4':{
-                cout << "return to grass"<< endl;//return to the grass
+                cout << "return to grass"<< endl;                               //return to the grass
                 Route1Defualt();
                 break;
             };
