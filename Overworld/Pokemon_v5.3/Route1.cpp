@@ -22,7 +22,7 @@ void Route1::RandomEncounter()                                                  
          cout << "No encounter!" << endl;
     }
     if(tile == 3){                                                                                  
-        cout << "Mandatory Trainer Battle" << endl;                             //here you should get 
+        cout << "Mandatory Trainer Battle" << endl;                             //here you should get mandatory battle
     }
 }
 

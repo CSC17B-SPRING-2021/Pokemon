@@ -20,17 +20,17 @@ using namespace std;
 
 class Intro {
   public:
-    string PName;
-    string RName;
-    int intro = 0;
-    void GameIntro();
-    void GetPlayer();
-    void GetRival();
-    void Playerroom ();
-    void Playerhouse();
-    void PalletTown();
-    void ProfessorOak();
-    void DefaultPalletTown();
+    string PName;                           //string to store PlayerName
+    string RName;                           //string to store RivalName
+    int intro = 0;                          //int to store intro
+    void GameIntro();                       //create GameIntro Member Function
+    void GetPlayer();                       //create GetPlayer Member Function
+    void GetRival();                        //create GetRival Member Function
+    void Playerroom ();                     //create Playerroom Member Function
+    void Playerhouse();                     //create Playerhouse Member Function
+    void PalletTown();                      //create PalletTown Member Function
+    void ProfessorOak();                    //create ProfessorOak Member Function
+    void DefaultPalletTown();               //create DefaultPalletTown Member Function
 };
 
 #endif /* INTRO_H */
