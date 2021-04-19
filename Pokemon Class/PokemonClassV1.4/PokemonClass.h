@@ -602,6 +602,7 @@ void PokemonClass::DmgPoke(int dmg, string MoveType) {
     if (currentHealth - dmg <= 0) {
         currentHealth = 0;
     } else currentHealth -= dmg;
+    
     //Checks whether an attack was very affective based on the affectivness variable
     //set up in the begin, which was added throughout lines 352 - 587
     //If affective then print it was affective, else print it wasn't affective
@@ -647,5 +648,10 @@ void PokemonClass::attackMenu() {
     cout << "1. " << this->Move1.Name << "    Type:" << this->Move1.type << "    Accuracy: " << this->Move1.accuracy << endl;
     cout << "2. " << this->Move2.Name << "    Type:" << this->Move2.type << "    Accuracy: " << this->Move2.accuracy << endl;
 }
+
+
+
+
+
 #endif /* POKEMON_H */
 
