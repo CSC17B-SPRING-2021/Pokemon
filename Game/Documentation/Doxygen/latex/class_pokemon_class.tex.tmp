@@ -1,0 +1,77 @@
+\hypertarget{class_pokemon_class}{}\doxysection{Pokemon\+Class Class Reference}
+\label{class_pokemon_class}\index{PokemonClass@{PokemonClass}}
+
+
+Collaboration diagram for Pokemon\+Class\+:
+% FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_pokemon_class_1_1move}{move}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pokemon_class_a36ee3cf96731917ee1bb3af40d5bd94e}\label{class_pokemon_class_a36ee3cf96731917ee1bb3af40d5bd94e}} 
+void {\bfseries attack\+Menu} ()
+\item 
+\mbox{\Hypertarget{class_pokemon_class_a8583db63b391e51273f2b426ebbd9186}\label{class_pokemon_class_a8583db63b391e51273f2b426ebbd9186}} 
+void {\bfseries pokemon\+Info} ()
+\item 
+\mbox{\Hypertarget{class_pokemon_class_a79db9b7513c8d1a12edbba9e16b0da5c}\label{class_pokemon_class_a79db9b7513c8d1a12edbba9e16b0da5c}} 
+void {\bfseries Heal\+Poke} (int)
+\item 
+\mbox{\Hypertarget{class_pokemon_class_a08e689b2958a6a0f4ecc7911adfcaf22}\label{class_pokemon_class_a08e689b2958a6a0f4ecc7911adfcaf22}} 
+void {\bfseries Dmg\+Poke} (int, string)
+\item 
+\mbox{\Hypertarget{class_pokemon_class_ab3652bc33f9c6db4920eaa3d9aefbf3b}\label{class_pokemon_class_ab3652bc33f9c6db4920eaa3d9aefbf3b}} 
+void {\bfseries Show\+HP} ()
+\item 
+\mbox{\Hypertarget{class_pokemon_class_a48711241cc0dd2b7378c2ad539488795}\label{class_pokemon_class_a48711241cc0dd2b7378c2ad539488795}} 
+void {\bfseries Set\+Up} (int Pokemon)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pokemon_class_a7605b0df9180f34cceb4b6e2aaa2bd60}\label{class_pokemon_class_a7605b0df9180f34cceb4b6e2aaa2bd60}} 
+string {\bfseries poke\+Name}
+\item 
+\mbox{\Hypertarget{class_pokemon_class_a59e9590ab0f8c7529b3bf989547ce954}\label{class_pokemon_class_a59e9590ab0f8c7529b3bf989547ce954}} 
+string {\bfseries poke\+Type}
+\item 
+\mbox{\Hypertarget{class_pokemon_class_ad24d1ea30c0a44b967177dcec32ef1d3}\label{class_pokemon_class_ad24d1ea30c0a44b967177dcec32ef1d3}} 
+string {\bfseries poke\+Type\+One}
+\item 
+\mbox{\Hypertarget{class_pokemon_class_ad230a45acb1cd055affe61a4526c599e}\label{class_pokemon_class_ad230a45acb1cd055affe61a4526c599e}} 
+int {\bfseries health\+Stat}
+\item 
+\mbox{\Hypertarget{class_pokemon_class_a247688e09b8f29a8aff05cc32d6ac554}\label{class_pokemon_class_a247688e09b8f29a8aff05cc32d6ac554}} 
+int {\bfseries current\+Health}
+\item 
+\mbox{\Hypertarget{class_pokemon_class_a2a158cd531a3be9a15c37024cd2afb87}\label{class_pokemon_class_a2a158cd531a3be9a15c37024cd2afb87}} 
+int {\bfseries base\+Attack}
+\item 
+\mbox{\Hypertarget{class_pokemon_class_abad2d15e9db1de3cc250b07e89867ae0}\label{class_pokemon_class_abad2d15e9db1de3cc250b07e89867ae0}} 
+int {\bfseries base\+Speed}
+\item 
+\mbox{\Hypertarget{class_pokemon_class_a19c9a7ac25191469f9114386d804dfd1}\label{class_pokemon_class_a19c9a7ac25191469f9114386d804dfd1}} 
+int {\bfseries base\+Special}
+\item 
+\mbox{\Hypertarget{class_pokemon_class_a361515eb3d2d69332b5472a09359c599}\label{class_pokemon_class_a361515eb3d2d69332b5472a09359c599}} 
+int {\bfseries base\+Def}
+\item 
+\mbox{\Hypertarget{class_pokemon_class_ab6eda2788ec6a1284bb28fec1b9979f0}\label{class_pokemon_class_ab6eda2788ec6a1284bb28fec1b9979f0}} 
+int {\bfseries pokemon\+Num}
+\item 
+\mbox{\Hypertarget{class_pokemon_class_a3492566d3b2143bc425c19629a98587a}\label{class_pokemon_class_a3492566d3b2143bc425c19629a98587a}} 
+\mbox{\hyperlink{struct_pokemon_class_1_1move}{move}} {\bfseries Move1}
+\item 
+\mbox{\Hypertarget{class_pokemon_class_a66baa6c2b984d684a9bf98db7ee72ff6}\label{class_pokemon_class_a66baa6c2b984d684a9bf98db7ee72ff6}} 
+\mbox{\hyperlink{struct_pokemon_class_1_1move}{move}} {\bfseries Move2}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/zacha/\+One\+Drive/\+Desktop/\+C\+S\+C 17\+B/\+R\+P\+G Group -\/ 43399 -\/ Project Report/\+Pokemon\+\_\+v6/Pokemon\+Class.\+h\item 
+C\+:/\+Users/zacha/\+One\+Drive/\+Desktop/\+C\+S\+C 17\+B/\+R\+P\+G Group -\/ 43399 -\/ Project Report/\+Pokemon\+\_\+v6/Pokemon\+Class.\+cpp\end{DoxyCompactItemize}
