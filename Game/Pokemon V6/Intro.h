@@ -25,6 +25,7 @@ class Intro {
   public:
     string PName;
     string RName;
+    bool end;
     int intro = 0;
     void GameIntro(playerclass);
     void GetPlayer(playerclass);

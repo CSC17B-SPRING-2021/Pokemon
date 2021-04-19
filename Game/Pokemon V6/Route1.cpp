@@ -46,16 +46,14 @@ void Route1::RandomEncounter(playerclass player) //Random Encounter function tha
 
 void Route1::Route1Intro() { //Function for to introduce players to grass and its functions
     cout << "You have entered the grass area." << endl;
-    cin.ignore();
     cout << "This is a dangerous place that Professor Oak warned us about." << endl;
-    cin.ignore();
     cout << "Here we should be able to fight and capture POKEMON!" << endl;
+    cout << "Press enter to continue"<< endl; 
     cin.ignore();
     cout << "The grass is a set of 5 tiles that you can move back and forth through." << endl;
-    cin.ignore();
     cout << "Each time you move to a tile, there will be a random chance for you to encounter a POKEMON battle." << endl;
-    cin.ignore();
     cout << "One of the tiles will have a mandatory POKEMON trainer battle." << endl;
+    cout << "Press enter to continue"<< endl; 
     cin.ignore();
 }
 
@@ -70,6 +68,7 @@ int Route1::Route1Defualt(playerclass player) { //Function to run after intro
             {
                 tile++;
                 cout << "You have moved forward a tile." << endl;
+                cout << "Press enter to continue"<< endl; 
                 cin.ignore();
                 cout << "You are on tile " << tile << endl;
                 RandomEncounter(player); //needs player class in the parenthesis
@@ -79,6 +78,7 @@ int Route1::Route1Defualt(playerclass player) { //Function to run after intro
             {
                 tile--;
                 cout << "You have moved back a tile." << endl;
+                cout << "Press enter to continue"<< endl; 
                 cin.ignore();
                 cout << "You are on tile " << tile << endl;
                 RandomEncounter(player);
@@ -87,8 +87,9 @@ int Route1::Route1Defualt(playerclass player) { //Function to run after intro
             default:
             {
                 cout << "You stand still...." << endl;
-                cin.ignore();
+                
                 cout << "...." << endl;
+                cout << "Press enter to continue"<< endl; 
                 cin.ignore();
                 cout << "Doing nothing....." << endl;
                 break;
@@ -102,10 +103,12 @@ int Route1::Route1Defualt(playerclass player) { //Function to run after intro
 void Route1::DefaultPalletTown(playerclass player) { //runs Default version of Pallet town that is different from the Intro class
 
     cout << "Steps into Pallet Town." << endl;
+    cout << "Press enter to continue"<< endl; 
     cin.ignore();
     cout << "The small town has just a few houses and one way out to adventure, the grass." << endl;
-    cin.ignore();
+   
     cout << "What would you like to do?" << endl;
+    
     cin.ignore();
     cout << "Check Rival's house? (press 1)" << endl;
     cout << "Talk to the town-folk (press 2)" << endl;
@@ -117,6 +120,7 @@ void Route1::DefaultPalletTown(playerclass player) { //runs Default version of P
         case '1':
         {
             cout << "When you step inside you see Rival's sister at the dining table and a map on the wall." << endl;
+            cout << "Press enter to continue"<< endl; 
             cin.ignore();
             do {
                 end = true;
@@ -148,6 +152,7 @@ void Route1::DefaultPalletTown(playerclass player) { //runs Default version of P
         case '2':
         {
             cout << "I'm raising POKeMON too! When they get strong, they can protect me!" << endl;
+            cout << "Press enter to continue"<< endl; 
             cin.ignore();
             cout << "Technology is incredible! You can now store and recall items and POKeMON as data via PC!" << endl;
             break;
