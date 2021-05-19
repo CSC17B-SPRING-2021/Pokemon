@@ -1,4 +1,4 @@
 [
 null,
-{"id":1,"battlerName":"Red SV Actor","characterIndex":0,"characterName":"FRLG Peds1","classId":1,"equips":[1,1,2,3,0],"faceIndex":7,"faceName":"PokemonFaces1","traits":[],"initialLevel":1,"maxLevel":99,"name":"Red","nickname":"","note":"","profile":""}
+{"id":1,"battlerName":"Red SV Actor","characterIndex":0,"characterName":"FRLG Peds1","classId":1,"equips":[1,1,2,3,0],"faceIndex":0,"faceName":"PL Faces 01","traits":[],"initialLevel":1,"maxLevel":99,"name":"Red","nickname":"","note":"","profile":""}
 ]
