@@ -1,10 +1,10 @@
 [
 null,
 {"id":1,"expanded":true,"name":"Pallet Town","order":5,"parentId":0,"scrollX":1139,"scrollY":641},
-{"id":2,"expanded":true,"name":"Reds House Lvl 1","order":6,"parentId":1,"scrollX":1139,"scrollY":641},
+{"id":2,"expanded":false,"name":"Reds House Lvl 1","order":6,"parentId":1,"scrollX":498,"scrollY":636.5},
 {"id":3,"expanded":false,"name":"Reds House Lvl 2","order":7,"parentId":2,"scrollX":1139,"scrollY":641},
 {"id":4,"expanded":true,"name":"Rivals House","order":8,"parentId":1,"scrollX":1139,"scrollY":641},
-{"id":5,"expanded":false,"name":"Oak's Lab","order":9,"parentId":1,"scrollX":1139,"scrollY":641},
+{"id":5,"expanded":false,"name":"Oak's Lab","order":9,"parentId":1,"scrollX":498,"scrollY":636.5},
 {"id":6,"expanded":false,"name":"Route 1","order":1,"parentId":0,"scrollX":816,"scrollY":1424},
 {"id":7,"expanded":true,"name":"Viridian City","order":2,"parentId":0,"scrollX":1223,"scrollY":1316},
 {"id":8,"expanded":false,"name":"Pokemon Center 1F","order":3,"parentId":7,"scrollX":1092,"scrollY":614.6666666666666},
